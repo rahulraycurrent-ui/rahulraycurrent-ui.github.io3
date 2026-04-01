@@ -11,7 +11,6 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
-// close when clicking outside
 document.getElementById("modal").addEventListener("click", (e) => {
   if (e.target.id === "modal") closeModal();
 });
@@ -42,10 +41,7 @@ tsParticles.load("tsparticles", {
 
   interactivity: {
     events: {
-      onHover: {
-        enable: true,
-        mode: "grab"
-      }
+      onHover: { enable: true, mode: "grab" }
     },
     modes: {
       grab: {
