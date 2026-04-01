@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rahul Ray Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div id="tsparticles"></div>
+
+<div class="content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="profile.jpg" class="profile">
+    <h1>Rahul Ray</h1>
+    <p>CSE Student | Developer</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>C / C++ / DSA</li>
+      <li>JavaScript</li>
+      <li>HTML & CSS</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="card">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Task Manager App</h3>
+      <p>JavaScript-based task manager with local storage</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Responsive animated portfolio</p>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="card">
+    <h2>Certificates</h2>
+
+    <div class="certificates">
+
+      <div class="cert">
+        <img src="playstore.jpg" onclick="openModal(this.src)">
+        <p><b>Google Play Academy</b><br>App Development Fundamentals</p>
+      </div>
+
+      <div class="cert">
+        <img src="ibm-data-python.jpg" onclick="openModal(this.src)">
+        <p><b>IBM</b><br>Data Analysis with Python</p>
+      </div>
+
+      <div class="cert">
+        <img src="ibm-data-analysis.jpg" onclick="openModal(this.src)">
+        <p><b>IBM</b><br>Data Analysis Credential</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="card">
+    <h2>Contact</h2>
+    Rahulraydev03@gmail.com
+  </section>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<footer>© 2026 Rahul Ray</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
